@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+nav {
+	background-color: #F2F4F3;
+
+}
+nav a {
+	color: #silver;
+	font-weight: 400;
+}
+
+nav a:hover {
+	color: #slategray;
+	font-weight: 600;
+}
+
+.jumbotron {
+	
+	background-color: #FFFFFF;
+
+}	
