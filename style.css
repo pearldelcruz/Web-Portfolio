@@ -3,24 +3,127 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
+
+	color: #72664F;
 }
 
-nav {
-	background-color: #F2F4F3;
+
+body {
+	background-color: #F4EEE7;
+	min-width: 100%;
+
+}
+.navbar {
+	background-color: #EBD9C8;
+	position:fixed;
+	opacity: 100%;
+	width: 100%;
+	overflow: hidden;
+	top: 0;
 
 }
 nav a {
-	color: #silver;
+	color: #642B2E;
 	font-weight: 400;
 }
 
 nav a:hover {
-	color: #slategray;
+	color: #4E3B3F;
 	font-weight: 600;
 }
 
-.jumbotron {
-	
-	background-color: #FFFFFF;
 
-}	
+#home {
+
+	
+	min-height: 100vh;
+	display: block;
+	align-content: center;
+
+
+}
+
+.jumbotron {
+
+	margin: 10px;
+	padding: 64px;
+	/*display: block;*/
+	/*justify-content: inherit;*/
+	text-align: center;
+	background-color: #F4EEE7;
+
+}
+
+.jumbotron .btn {
+
+	background-color: #72664F;
+	border: 0;
+	color: #F4EEE7;
+	border-radius: 20px;
+
+}
+
+
+#aboutme {
+	vertical-align: center;
+	min-height: 100vh;
+
+}
+
+#aboutme h1 {
+	align-content: center;
+}
+
+#aboutme p {
+	justify-content: inherit;
+}
+
+#aboutme img {
+	height: 80%;
+ 	width: 85%;
+ 	object-fit:scale-down;
+	/*border-radius: 100%;*/
+	/*max-height: 70%;*/
+	background-color: #F4EEE7;
+}
+
+#aboutme li {
+
+
+}
+
+#projects {
+	padding-top: 20px;
+	min-height: 100vh;
+	width: 100vh;
+
+}
+
+#projects_section {
+	
+	width: inherit;
+	height: 30px;
+	display: inline-flex;
+	justify-content: center;
+
+}
+
+#contact {
+	padding-top: 20px;
+	min-height: 100vh;
+}
+
+
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: #EBD9C8;
+
+}
+
+.footlogo {
+	width: 25px;
+	margin: 10px;
+}
+
+
