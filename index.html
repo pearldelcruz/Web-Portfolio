@@ -1,204 +1,268 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Digital Portfolio</title>
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<!-- bootstrap -->
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+
+	
+	<!-- css -->
 	<link rel="stylesheet" href="style.css">
 
+	<!-- icons -->
+	<script src="https://unpkg.com/feather-icons"></script>
+
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/fd27ed1a8b.js" crossorigin="anonymous"></script>
+
+	<!-- google font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+	<link rel="icon" sizes="32x32" href="assets/images/favicon-32x32.png">
+	<title>Pearl De La Cruz | Portfolio</title>
 </head>
 <body>
-
-<!-- Navbar: This shows the top most of the page -->
-
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
-	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-	    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-	     <li class="nav-item">
-	       <a class="nav-link active" href="#home">Home</a>
-	     </li>
-	     <li class="nav-item">
-	       <a class="nav-link" href="#aboutme">About</a>
-	     </li>
-	     <li class="nav-item">
-	       <a class="nav-link" href="#projects">Projects</a>
-	     </li>
-	     <li class="nav-item">
-	       <a class="nav-link" href="#contact">Contact</a>
-	     </li>
-	    </ul>
+	
+	<!-- start of navbar -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#home"><img src="assets/images/favicon-32x32.png" alt="profile img" class="navLogo"></a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse text-center" id="navbarNav">
+	      <ul class="navbar-nav">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#home">home</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" href="#about">about</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" href="#projects">projects</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" href="#contact">contact</a>
+	        </li>
+	      </ul>
+	    </div>
 	  </div>
 	</nav>
+	<!-- end of navbar -->
 
-<!-- Jumbotron/Greetings/Home Page -->
-	
-	<div class="jumbotron jumbotron-fluid" id="home">
-		<div class="container"> 
+	<!-- start of home/landing page -->
+
+	<section id="home" class="home py-5">
+		<div class="container-lg">
 			<div class="row">
-				  <div class="col-12">
-				    <h1>Hello there! I am Pearl</h1>
-				    <p>I'm a Full Stack Web Developer.</p>
-				    <p>Welcome to my Portfolio.</p>
-				    <a class="btn" href="#projects" role="button">Scroll down to view projects</a>
-				  </div>
+				<div class="col-12 m-5">
+				</div>
+			</div>
+			<div class="row home-row align-items-center align-content-center">
+				<div class="col-md-6 mt-5 mt-md-0 col-sm-12">
+					<div class="home-img">
+						<img src="assets/images/profile.png" alt="profile img" class="profileImg">
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12 mt-5 mt-md-0 order-md-first">
+					<div class="home-text">
+						<h4 class="muted mb-1">Hello there...</h4>
+						<h1>I am Pearl.</h1>
+						<h2 class="dynamic-txt mb-2">I'm a <span class="mx-1"> Full Stack Web Developer.</span></h2>
+						<h4 class="muted">Let's create something amazing together.</h4>
+					</div>
+					<div class="home-text">
+						<a href="#projects" class="btn px-3 mt-3 btn-home-work">MY WORK</a>
+						<a href="#contact" class="btn px-3 mt-3 btn-home-hire">HIRE ME</a>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-
-<!-- About me -->
-	
-	<div id="aboutme" class="container">
-		<!-- <h1>Profile</h1> <-->	</-->
-		<div class="row">
-			<div class="col-12 col-lg-6">
-				<h1>About me</h1>
-				<p>My name is <strong>Pearl De La Cruz</strong>. I have been in the Financial Services Industy for almost a decade. My day to day task includes process improvement and development. What sparked my passion for programming and web design is the idea of being able to create something from a series of codes and commands. With technology being fast-paced and always evolving, I am happy to be able to challenge myself in this field. The worldwide web has connected people from all over the world over the years and I am thrilled to be able to explore this amazing world of technology.
-				</p>
-				<hr class="my-4">
-
-			</div>
-			<div class="col-12 col-lg-6">
-				<div>
-				<img src="./images/me.png">
-				</div>
-				<div>
-
-				</div>
-
-			</div>
-			
-		</div>
-			<!-- <h1>Qualifications</h1>
-			<div class="col-12 col-lg-6">
-				<h3>Tools</h3>
-				<ul>
-					<li><img class="quali.logo" src="./images/logo-sublime-text-3.png"></li>
-					<li><img class="quali.logo" src=""></li>
-					<li><img class="quali.logo" src=""></li>
-
-				</ul>
-				<h3>Scripting languages</h3>
-				<ul>
-					<li><img class="quali.logo" src=""></li>
-					<li><img class="quali.logo" src=""></li>
-					<li><img class="quali.logo" src=""></li>
-				</ul>
-
-			</div> -->
-	</div>
-
-
-	<!-- <div class="container">
-		<div class="row">
-			<div class="col-12">
-
-				<h1>Qualifications</h1>
-
-
-			</div>
-		</div>
-	</div> -->
-
-<!-- My projects -->
-
-		
-		
-		<div id="projects" class="container">
-			
-				<div class="col-12 mt-5">
-					<h1>Here's what I've done so far</h1>
-				</div>
-
+		<div class="container mb-5">
 			<div class="row">
-				<div class="col-12 col-lg-4">
-					<div class="card">
-					  <img src="./images/cap1.png" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Capstone 1</h5>
-					    <a href="#" class="btn">View Project</a>
-					  </div>
-					</div>
-				</div>
-				<div class="col-12 col-lg-4">
-					<div class="card">
-					  <img src="./images/cap.soon.png" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Capstone 2</h5>
-					    <a href="#" class="btn">View Project</a>
-					  </div>
-					</div>
-				</div>
-				<div class="col-12 col-lg-4">
-					<div class="card">
-					  <img src="./images/cap.soon.png" class="card-img-top" alt="...">
-					  <div class="card-body">
-					    <h5 class="card-title">Capstone 3</h5>
-					    <a href="#" class="btn">View Project</a>
-					  </div>
-					</div>
-				</div>
-			</div>
-	</div>
-	<!-- Contacts -->
-
-		<div class="container" id="contact">
-			<h1>Contact</h1>
-			<div class="row justify-content-center p-5 m-5">
-				<div class="col-12 col-lg-6">
-					<h3 class="tex-center">Have a question or want to work together?</h3>
-					<form class="in-line">
-					  <div class="form-group">
-					    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
-					  </div>
-					  <div class="form-group">
-					    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter email">
-					  </div>
-					  <div class="form-group">
-					    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
-					  </div>
-					</form>
-				</div>
-				<div class="col-lg-6">
-					<iframe width="400" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d682.861297393858!2d121.02675200719852!3d14.493480787919074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cee46e5b1ab3%3A0x75bf97739bf8ce6c!2zMTTCsDI5JzM3LjAiTiAxMjHCsDAxJzM2LjkiRQ!5e0!3m2!1sen!2sph!4v1628729564142!5m2!1sen!2sph" allowfullscreen="" loading="lazy"></iframe>
+				<div class="col">
+					
 				</div>
 			</div>
 		</div>
-
-
-<!-- Footer -->
-	<section class="contactinfo">
-		<ul> 
-			<p>Socials</p>
-			<li><img src=""><a href="https://www.instagram.com/dhanglopez/"></a></li>
-			<li><img src=""><a href="https://www.linkedin.com/in/pearl-de-la-cruz-10046649/"></a></li>
-			<p>Emails</p>
-		</ul>
-		<UL>
-			<li>pearldelcruz@gmail.com</li>
-			<li>pearl_delacruz15@yahoo.com</li>
-		</ul>
-
 	</section>
+
+	<!-- end of home/landing page -->
+
+	<!-- start of about page -->
+
+	<section id="about" class="py-5 gray-bg">
+		<div class="container mt-5">
+			<div class="row">
+				<!-- about col -->
+				<div class="col-md-6 col-sm-12 col-12 col-lg-6 pl-3">
+					<div class="mb-5">
+						<h1 class="aboutTitle"><span>AB</span>OUT ME</h1>
+					</div>
+
+					<div class="about-info">
+						<h2>I'm <b>Pearl De La Cruz</b></h2>
+						</br>
+						<h4>A <span class="highlight">Full Stack Developer </span> based in <span class="highlight">Manila</span></h4>
+
+						<p>What sparked my passion for programming is the idea of being able to create something amazing, from a series of codes and commands. With technology being fast-paced and always evolving, I am happy to be able to challenge myself in this field.</p>
+
+						<p>I'd love to work with you!</p>
+
+					</div>
+				</div>
+				<!-- skills col-->
+				<div class="col-md-6 col-sm-12 col-12 col-lg-6 pl-3">
+					<div class="mb-5 col-12">
+						<h1 class="aboutTitle"><span>MY</span> SKILLS</h1>
+					</div>
+					<div class="col-12">
+						<p>With a Bachelor's Degree in Computer Science and a graduate at Zuitt Coding Training Bootcamp, my main skill are as follows:</p>
+					</div>
+					<div class="row mb-5">
+						<div class="col-12">
+							<ul class="skill-list-ul">
+								<li class="skill-list"> <i class="icon" data-feather="check-square"></i> HTML & CSS </li>
+								<li class="skill-list"> <i class="icon" data-feather="check-square"></i> Bootstrap </li>
+								<li class="skill-list"> <i class="icon" data-feather="check-square"></i> JavaScript </li>
+								<li class="skill-list"> <i class="icon" data-feather="check-square"></i> MongoDB </li>
+								<li class="skill-list"> <i class="icon" data-feather="check-square"></i> Express.js </li>
+								<li class="skill-list"> <i class="icon" data-feather="check-square"></i> React.js </li>
+								<li class="skill-list"> <i class="icon" data-feather="check-square"></i> Node.js </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- end of about page -->
+
+	<!-- start of project page -->
+
+	<section id="projects" class="projects-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 py-5 text-center">
+					<h1 class="aboutTitle"><span>MY</span> PROJECTS</h1>
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-12 col-sm-12 py-3 projects-container">
+
+					<div class="card projects-card">
+					  <img class="card-img-top" src="assets/images/project1.png" alt="Card image cap">
+					  <div class="card-body">
+					    <h5 class="card-title">Card title</h5>
+					    <p class="card-text">A Website Portfolio. Created using HTML, CSS and Bootsrap. This portfolio is hosted in github</p>
+					    <a href="#home" class="btn btn-primary">View Project</a>
+					  </div>
+					</div>
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-12 col-sm-12 py-3 projects-container">
+					<div class="card projects-card">
+					  <img class="card-img-top" src="assets/images/project2.png" alt="Card image cap">
+					  <div class="card-body">
+					    <h5 class="card-title">Card title</h5>
+					    <p class="card-text">An e-commerce website. Front-end was created using React.js and React Bootstrap, hosted in Netlify. MongoDB, Express.js Rest API and Node.js were used for the back-end and hosted via Heroku</p>
+					    <a href="https://yourdivingbuddy.netlify.app/" class="btn btn-primary">View Project</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- end of project page -->
+
+	<!-- start of contact page -->
+
+	<section id="contact" class="gray-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 m-5">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 mb-5 text-center">
+					<h1 class="aboutTitle"><span>GE</span>T IN TOUCH</h1>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-12 col-lg-7">
+					<div class="mt-2">
+						<form class="pt-3 contact-form" action="https://formspree.io/f/xyylvlgd" method="POST">
+							<h4>SAY SOMETHING</h4>
+							<input class="input1 mb-2" type="text" name="_replyto" placeholder="Name*" style="height: 3rem;">
+							<input class="input1 mb-2" type="email" name="_replyto" placeholder="Email*" style="height: 3rem;">
+							<input class="input2 mb-2" type="email" name="_replyto" placeholder="Subject*" style="height: 3rem;">
+							<textarea class="input2" name="message" placeholder="Your message*" style="height: 8rem;"></textarea>
+							<!-- your other form fields go here -->
+							<button class="contact-button" type="submit">SEND MESSAGE</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-5">
+					<div class="mt-2">
+						<div class="contact-info">
+							<div class="icon"><img src="assets/images/map-pin.svg" alt="map-pin"></div>
+							<div class="contact-details"><p> 211 Jesuit St. Sta Ana Zone 4, Sun Valley Parañaque City</p></div>
+						</div>
+					</div>
+					<div class="mt-2">
+						<div class="contact-info">
+							<div class="icon"><img src="assets/images/phone.svg" alt="phon"></div>
+							<div class="contact-details"><p>(02) 8519 3540</p> <p>(63) 915 1494 888</p></div>
+						</div>
+					</div>
+					<div class="mt-2">
+						<div class="contact-info">
+							<div class="icon"><img src="assets/images/mail.svg" alt="mail"></div>
+							<div class="contact-details"><p>pearldelcruz@gmail.com</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end of contact page -->
+
+	<!-- start of footer -->
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<footer>
+						
+							<span ><img class="footer-icon" src="assets/images/instagram.png"></span>
+							<span><img class="footer-icon" src="assets/images/linkedin.png"></span>
+							<!-- <span> | </span> -->
+							<span>| &copy; 2021 Pearl De La Cruz | All Rights Reserved </span>
+							<!-- <span> | </span>
+							<span> All Rights Reserved</span> -->
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- end of footer -->
+
 	
-	<!-- <div class="col-12"> -->
-		<footer>
-				<span>&copy; 2021. Pearl Dela Cruz</span>
-		</footer>
-	<!-- </div> -->
+	<!-- JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 
+	<script>
+      feather.replace()
+    </script>
 
-	<!-- Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>

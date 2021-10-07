@@ -2,167 +2,512 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Raleway', sans-serif;
-
-	color: #72664F;
+	font-family: 'Poppins', sans-serif;
+	color: #090A0C;
 }
 
 
 body {
-	background-color: #F4EEE7;
-	/*min-width: 100%;*/
+	background-color: #fff;
+	/*color: #555a64;*/
+	position: cover;
 
 }
-.navbar {
-	background-color: #EBD9C8;
-	position:fixed;
-	opacity: 100%;
-	width: 100%;
+
+nav {
+	background-color: #fff;
+}
+
+.nav-link:hover{
+	color: #dc9940 !important;
+	font-weight: bold;
+	border-bottom: 3px solid #dc9940;
+	/*transition: 2s;*/
+	border-bottom-style: dotted;
+	
+}
+
+.navLogo {
+
+	height: 30px;
+	padding: 2px;
+	display: flex;
+	justify-content: center;
+}
+
+
+/*---HOME---*/
+
+.home-img {
+	display: flex;
+	justify-content: center;
+}
+
+.profileImg {
+	justify-content: center;
+	max-width: 500px;
+	height: 500px;
+}
+
+
+.dynamic-txt{
+	background: #fff;
+	animation: type 3s infinite;
 	overflow: hidden;
-	top: 0;
-
-}
-nav a {
-	color: #642B2E;
-	font-weight: 400;
+	white-space: nowrap;
 }
 
-nav a:hover {
-	color: #4E3B3F;
-	font-weight: 600;
+@keyframes type {
+	0% {
+		width: 0ch;
+	}
+	100% {
+		width: 25ch
+	}
 }
 
+.dynamic-txt span{
+	font-weight: bolder;
+	color:#dc9940;
+}
 
-/*#home {
+.btn-home-work {
+	background-color: #dc9940;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	width: 8rem;
+}
 
-	
+.btn-home-work:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.btn-home-hire {
+	border: 2px solid;
+	border-color: #dc9940;
+	color:#dc9940;
+	width: 8rem;
+}
+
+.btn-home-hire:hover {
+	background-color: #dc9940;
+	color: #fff;
+}
+
+/*-------ABOUT------*/
+
+.gray-bg{
+
 	min-height: 100vh;
-	display: flex;
-	align-content: center;
-	
-
-
-}*/
-
-.jumbotron {
-
-	height: 100vh;
-	/*width: 100%;*/
-	display: flex;
-	padding-top: 1em;
-	background-color: #F4EEE7;
-	align-items: center;
+	background: #eaedf2;
 
 }
 
-/*.jumbotron-container {
-
-	height: 100%;
-	display: flex;
-	padding-top: 1em;
-	background-color: #F4EEE7;
-	align-items: center;
-}*/
-
-.jumbotron .btn {
-
-	background-color: #72664F;
-	border: 0;
-	color: #F4EEE7;
-	border-radius: 20px;
-
+.aboutTitle {
+	font-weight: bold;
 }
 
-/*#aboutme .row {
-	display: flex;
-}*/
-
-#aboutme {
-	height: 100vh;
-	/*height: 100%;*/
-	display: flex;
-	padding-top: 1em;
-	background-color: #F4EEE7;
-	align-items: center;
+.aboutTitle span{
+	border-bottom: 2px solid #dc9940;
 }
 
 
-#aboutme h1 {
-	display: block;
-	margin-bottom: 10px;
-	align-content: center;
-}
-
-#aboutme p {
-	justify-content: inherit;
-	text-align: justify;
-}
-
-#aboutme img {
-	height: 70%;
- 	width: 75%;
- 	object-fit:cover;
-	border-radius: 50%;
-	/*max-height: 70%;*/
-	/*background-color: #F4EEE7;*/
+.highlight {
+	color: #dc9940;
 }
 
 
-#aboutme li {
-	list-style-type: none;
-}
-
-.quali.logo {
-	width: 5px;
-	margin: 5px;
+.skill-list-ul{
+	margin: 0;
+	padding: 0;
 
 }
-
-#project {
-
-	height: 100vh;
-	display: flex;
-	/*	*/
-	background-color: #F4EEE7;
-	align-items: center;
-}
-
-#contact {
-	padding-top: 20px;
-	min-height: 100vh;
-
-}
-
-#contact h3 {
-
-	text-align: center;
-}
-
-
-.contactinfo {
-	padding-left: 20px;
-	justify-content: center;
-	/*background-color: #EBD9C8;*/
-}
-
-.contactinfo li {
-	padding-left: 20px;
-	justify-content: center;
-	list-style-type: none;
+.skill-list{
 	display: inline-block;
-	text-align: center;
+	flex-direction: row;
+	list-style: none;
+	padding: 5px;
+	margin: 8px;
+	width: 12rem;
 }
 
-footer {
+.skill-list:hover{
+	background-color: #dc9940;
+	color: #fff !important;
+}
+
+/*-------PROJECTS------*/
+
+.projects-section{
+	min-height: 100vh;
+	width: 100%;
+}
+
+.projects-container{
 	display: flex;
-	justify-content: center;
-	background-color: #EBD9C8;
+}
+
+.projects-card{
+	padding: 5px;
+	margin: 10px;
 
 }
 
-/*.footlogo {
-	width: 25px;
-	margin: 10px;
-}*/
+/*--------CONTACT-------*/
+
+.contact-form{
+	padding: 20px;
+	margin: 0;
+	width: 100%;
+	justify-content: center;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.input1 {
+	display: inline-block;
+	justify-content: space-evenly;
+	width: 45%;
+	padding: 5px;
+	margin: 5px;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-color: #EDECEC;
+}
+
+.input2 {
+	justify-content: space-evenly;
+	width: 92%;
+	padding: 5px;
+	margin: 5px;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-color: #EDECEC;
+}
+
+.contact-button{
+	display: flex;
+	width: 10rem;
+	border-radius: 2px;
+	border: 0;
+	background-color: #dc9940;
+	color: #fff;
+	padding: 5px;
+	margin: 5px;
+	justify-content: center;
+}
+
+.contact-button:hover{
+	background-color: #000;
+	color: #fff;
+	padding: 5px;
+}
+
+.contact-info{
+	padding: 20px;
+	margin: 0;
+	width: 100%;
+	justify-content: center;
+	background-color: #fff;
+	border-radius: 5px;
+	display: flex;
+
+}
+
+.icon{
+	width: 10%;
+	margin-right: 5px;
+}
+
+.contact-details{
+	width: 90%;
+	margin-left: 5px;
+	padding-left: 5px;
+
+}
+
+/*------footer------*/
+
+footer{
+	display: flex;
+	padding: 10px;
+	justify-content: center;
+}
+
+.footer-icon{
+	height: 40px;
+	width: 40px;
+	padding: 2px;
+}
+
+/*------MEDIA QUERY-------*/
+
+@media only screen and (min-width: 280px) {
+	.profileImg{
+		height: 280px;
+		width: 280px;
+	}
+
+	.home-text{
+		text-align: center;
+	}
+
+	.dynamic-txt{
+		display: inline-flex;
+		text-align: center;	
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 16px;
+	}
+	h4{
+		font-size: 14px;
+	}
+	p{
+		font-size: 13px;
+		flex-wrap: wrap;
+		text-align: justify;
+	}
+	.aboutTitle {
+		padding-top: 20px;
+	}
+	.skill-list {
+		font-size: 13px;
+		display: inline-block;
+		flex-direction: row;
+		list-style: none;
+		padding: 2px;
+		margin: 2px;
+		width: 5rem;
+	}
+
+	.projects-card{
+		padding: 5px;
+		margin: 10px;
+
+	}
+
+	.footer-icon{
+		height: 30px;
+		width: 30px;
+		padding: 5px;
+	}
+
+}
+
+@media only screen and (min-width: 320px) {
+	.profileImg{
+		height: 300px;
+		width: 300px;
+	}
+
+	.home-text{
+		text-align: center;
+	}
+
+	.dynamic-txt{
+		display: inline-flex;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 16px;
+	}
+	h4{
+		font-size: 14px;
+	}
+	p{
+		font-size: 13px;
+		flex-wrap: wrap;
+		text-align: justify;
+	}
+	.aboutTitle {
+		padding-top: 20px;
+	}
+	.skill-list {
+		font-size: 13px;
+		display: inline-block;
+		flex-direction: row;
+		list-style: none;
+		padding: 5px;
+		margin: 5px;
+		width: 8rem;
+	}
+
+	.footer-icon{
+		height: 30px;
+		width: 30px;
+		padding: 5px;
+	}
+
+	
+}
+
+@media only screen and (min-width: 360px) {
+	.profileImg{
+		height: 300px;
+		width: 300px;
+	}
+
+	.home-text{
+		text-align: center;
+	}
+
+	.dynamic-txt{
+		display: inline-flex;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 16px;
+	}
+	h4{
+		font-size: 14px;
+	}
+	p{
+		font-size: 13px;
+		flex-wrap: wrap;
+		text-align: justify;
+	}
+	.aboutTitle {
+		padding-top: 20px;
+	}
+	.skill-list {
+		font-size: 13px;
+		display: inline-block;
+		flex-direction: row;
+		list-style: none;
+		padding: 5px;
+		margin: 5px;
+		width: 8rem;
+	}
+	.footer-icon{
+		height: 30px;
+		width: 30px;
+		padding: 5px;
+	}
+
+	
+}
+
+@media only screen and (min-width: 415px) {
+	.profileImg{
+		height: 300px;
+		width: 300px;
+	}
+
+	.home-text{
+		text-align: center;
+	}
+
+	.dynamic-txt{
+		display: inline-flex;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 16px;
+	}
+	h4{
+		font-size: 14px;
+	}
+	p{
+		font-size: 13px;
+		flex-wrap: wrap;
+		text-align: justify;
+	}
+	.aboutTitle {
+		padding-top: 20px;
+	}
+	.skill-list {
+		font-size: 13px;
+		display: inline-block;
+		flex-direction: row;
+		list-style: none;
+		padding: 5px;
+		margin: 5px;
+		width: 8rem;
+	}
+	.footer-icon{
+		height: 30px;
+		width: 30px;
+		padding: 5px;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+	.gray-bg{
+
+		background: #eaedf2;
+		background-position: center;
+		background-repeat: repeat;
+
+	}
+	.home-row {
+		min-height: 70vh;
+	}
+
+	.profileImg{
+		height: 500px;
+		width: 500px;
+	}
+
+	.home-text{
+		text-align: left;
+	}
+
+	.dynamic-txt{
+		display: inline-flex;
+		text-align: left;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	h4{
+		font-size: 24px;
+	}
+	p{
+		font-size: 23px;
+		flex-wrap: wrap;
+		text-align: justify;
+	}
+	.skill-list {
+		font-size: 23px;
+		display: inline-block;
+		flex-direction: row;
+		list-style: none;
+		padding: 5px;
+		margin: 8px;
+		width: 12rem;
+	}
+	.skill-list-ul{
+		margin: 0;
+		padding: 0;
+		max-width: 100%;
+
+	}
+
+}
 
 
